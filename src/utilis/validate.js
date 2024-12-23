@@ -5,7 +5,7 @@ export const validateData=(email,password)=>{
       const isPasswordValid =
         /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/.test(password);
 
-        if(isEmailValid) return "Email Id is Not Valid"
+        if(!isEmailValid) return "Email Id is Not Valid"
         if(!isPasswordValid) return "Password is not Correct"
     
 
